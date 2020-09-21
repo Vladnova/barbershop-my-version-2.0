@@ -1,0 +1,68 @@
+.price {
+  background: linear-gradient(
+      to right,
+      rgba(17, 19, 25, 0.8),
+      rgba(17, 19, 25, 0.8)
+    ),
+    url("../images/price/services-prices-m.jpg");
+  background-size: cover;
+
+  @media screen and (min-resolution: 2dppx) {
+    background: linear-gradient(
+        to right,
+        rgba(17, 19, 25, 0.8),
+        rgba(17, 19, 25, 0.8)
+      ),
+      url("../images/price/services-prices-m@2x.jpg");
+    background-size: cover;
+  }
+
+  .title {
+    color: $bg-pages-first;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+    color: $bg-pages-first;
+  }
+}
+
+.price-list {
+  @extend %list;
+
+  margin-bottom: 50px;
+  padding: 30px;
+
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+
+  color: $gray-paragraph;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .cost {
+    margin: 0;
+  }
+
+  .price-line {
+    width: 1px;
+    flex-grow: 1;
+    height: 1px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background: $color-divider;
+    transform: rotate(180deg);
+  }
+}

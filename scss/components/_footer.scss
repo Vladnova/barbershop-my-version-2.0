@@ -1,0 +1,117 @@
+.first-footer {
+  background-color: $bg-pages-third;
+
+  .button {
+    color: $bg-pages-first;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.white {
+  color: $bg-pages-first;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 44px;
+}
+
+.text-form:focus-within,
+.text-form:hover {
+  .field::placeholder {
+    color: $bg-pages-first;
+    cursor: pointer;
+  }
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 44px;
+  padding: 8px 0;
+
+  color: $bg-pages-first;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid $text-form;
+  outline: none;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  font-family: Open Sans;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $bg-pages-first;
+  }
+
+  &:placeholder-shown {
+    color: $bg-pages-first;
+  }
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+  resize: none;
+}
+
+.second-footer {
+  background-image: linear-gradient(
+      to right,
+      rgba(17, 19, 25, 0.8),
+      rgba(17, 19, 25, 0.8)
+    ),
+    url("../images/footer/bgi-footer-m.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-resolution: 2dppx) {
+    background: linear-gradient(
+        to right,
+        rgba(17, 19, 25, 0.8),
+        rgba(17, 19, 25, 0.8)
+      ),
+      url("../images/footer/bgi-footer-m@2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.address-footer {
+  margin-bottom: 44px;
+
+  .contacts {
+    @extend %link;
+    @extend %hover;
+
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: $gray-paragraph;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.icon-address {
+  vertical-align: middle;
+  margin-right: 20px;
+
+  --color3: currentColor;
+}
+
+.text-footer {
+  @extend %mini-title;
+  @extend %before-gray;
+  color: $bg-pages-first;
+}
+
+.time {
+  @extend %text-third;
+
+  color: $gray-paragraph;
+}

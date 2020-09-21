@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  font-family: $font-base;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $title-black;
+  letter-spacing: $letter-spacing;
+
+  background-color: $bg-pages-first;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

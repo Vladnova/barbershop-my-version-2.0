@@ -1,0 +1,13 @@
+.mb-44 {
+  margin-bottom: 44px;
+}
+
+.list-workflow {
+  @extend %list;
+
+  .item-workflow {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

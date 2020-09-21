@@ -1,0 +1,38 @@
+.text-black {
+  @extend %mini-title;
+  @extend %before-black;
+
+  color: $title-black;
+}
+
+.title-about-us {
+  max-width: 330px;
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: $title-black;
+}
+
+.subtitle {
+  @extend %subtitle;
+
+  color: $black-paragraph;
+  margin-bottom: 40px;
+
+  .text-about-us {
+    display: block;
+    padding-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+
+    color: $black-paragraph;
+  }
+}

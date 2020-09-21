@@ -1,0 +1,56 @@
+.masters {
+  background-color: $features-color;
+}
+
+.list-masters {
+  @extend %list;
+
+  .item-master {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.foto-master {
+  margin-bottom: 30px;
+}
+
+.name-master {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $title-black;
+}
+
+.position-master {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $color-active;
+}
+
+.social-master {
+  text-align: center;
+}
+
+.icon-social {
+  @extend %link;
+  @extend %hover;
+
+  fill: currentColor;
+  color: $title-black;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

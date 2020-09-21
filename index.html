@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="hero">
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="nav-header">
+          <a href="/index.html" class="logo">
+            <svg width="67px" height="55px">
+              <use href="./images/sprit.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button
+            class="btn-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-button
+          >
+            <svg width="40px" height="40px">
+              <use class="icon-menu" href="./images/sprit.svg#icon-menu"></use>
+              <use
+                class="icon-close"
+                href="./images/sprit.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu" id="menu" data-menu>
+            <ul class="list-menu">
+              <li class="item-menu">
+                <a class="link-menu" href="">О нас</a>
+              </li>
+              <li class="item-menu">
+                <a class="link-menu" href="">Услуги и цены</a>
+              </li>
+              <li class="item-menu">
+                <a class="link-menu" href="">Мастера</a>
+              </li>
+              <li class="item-menu">
+                <a class="link-menu" href="">Контакты</a>
+              </li>
+            </ul>
+            <address class="contact-menu">
+              <a class="phone-menu" href="tel:+380441111111">
+                <span>+38 044 111 11 11</span>
+              </a>
+            </address>
+            <button class="button big" type="submit">онлайн-запись</button>
+            <a class="link-social line" href="">Instagram</a>
+            <a class="link-social" href="">Youtube</a>
+          </div>
+        </nav>
+        <!-- Hero -->
+        <div class="hero-text">
+          <p class="text-gray">A hair salon for men in Kyiv</p>
+          <h1 class="title-hero">BarberShop</h1>
+          <p class="subtitle-hero">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- About us -->
+    <div class="container">
+      <p class="text-black">О НАС</p>
+      <h3 class="title-about-us">Лучший Барбершоп твоего города</h3>
+      <p class="subtitle">
+        Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
+        нам.
+        <span class="text-about-us"
+          >Мы команда, которая никогда не останавливается на достигнутом и
+          жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+          никогда не сможешь быть прежним. Мы команда, которая всегда с
+          клиентами "на одной волне". Поэтому, мы всегда готовы
+          усовершенствовать каждого, кто к нам приходит!</span
+        >
+      </p>
+      <button class="button" type="button">онлайн-запись</button>
+    </div>
+    <!-- Services and prices -->
+    <section class="price">
+      <div class="container">
+        <p class="text-gray">Проведи время в компании лучших мастеров</p>
+        <h2 class="title">Услуги и цены</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            Мужская стрижка
+            <span class="price-line"></span>
+            <p class="cost">от 300 грн.</p>
+          </li>
+          <li class="price-item">
+            Стрижка бороды
+            <span class="price-line"></span>
+            <p class="cost">от 200 грн.</p>
+          </li>
+          <li class="price-item">
+            Стрижка усов
+            <span class="price-line"></span>
+            <p class="cost">от 200 грн.</p>
+          </li>
+          <li class="price-item">
+            Бритье опасной бритвой
+            <span class="price-line"></span>
+            <p class="cost">от 200 грн.</p>
+          </li>
+          <li class="price-item">
+            Cтрижка у стажера
+            <span class="price-line"></span>
+            <p class="cost">от 50 грн.</p>
+          </li>
+          <li class="price-item">
+            Стрижка под насадку
+            <span class="price-line"></span>
+            <p class="cost">от 200 грн.</p>
+          </li>
+          <li class="price-item">
+            Детская стрижка (до 12 лет)
+            <span class="price-line"></span>
+            <p class="cost">от 300 грн.</p>
+          </li>
+          <li class="price-item">
+            Камуфлирование седины
+            <span class="price-line"></span>
+            <p class="cost">от 200 грн.</p>
+          </li>
+        </ul>
+        <button class="button" type="button">онлайн-запись</button>
+      </div>
+    </section>
+
+    <!-- Old school -->
+    <div class="container">
+      <p class="text-black">старая традиционная школа</p>
+      <h2 class="title mr-bt-20">Почему приходят именно к нам?</h2>
+      <p class="text-plus">
+        О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
+        чем 10 раз прочитать.
+      </p>
+      <ul class="list-plus">
+        <li class="item-plus">
+          <span class="number">600</span>
+
+          <p class="text">Довольных клиентов в день</p>
+        </li>
+        <li class="item-plus">
+          <span class="number">50</span>
+
+          <p class="text">Наград за отличный сервис</p>
+        </li>
+        <li class="item-plus">
+          <span class="number">20</span>
+
+          <p class="text">Лучших мастеров Киева</p>
+        </li>
+        <li class="item-plus">
+          <span class="number">100</span>
+
+          <p class="text">Подарков постоянным клиентам</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Masters -->
+    <section class="masters">
+      <div class="container">
+        <p class="text-black">для настоящих ценителей атмосферы</p>
+        <h2 class="title">Наши мастера</h2>
+        <ul class="list-masters">
+          <li class="item-master">
+            <picture>
+              <source
+                srcset="
+                  ../images/masters/master-1-m.webp    418w,
+                  ../images/masters/master-1-m@2x.webp 836w
+                "
+                type="image/webp"
+              />
+              <img
+                class="foto-master"
+                srcset="
+                  ../images/masters/master-1-m.jpg    418w,
+                  ../images/masters/master-1-m@2x.jpg 836w
+                "
+                src="../images/masters/master-1-m.webp"
+                alt="John Smith"
+                width="450"
+                sizes="(min-width: 1280px) 33vw, 100vw"
+              />
+            </picture>
+            <h3 class="name-master">John Smith</h3>
+            <p class="position-master">Extreme Barber</p>
+            <div class="social-master">
+              <a class="icon-social" href="" aria-label="Instagram">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Twitter">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Facebook">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Linkedin">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="item-master">
+            <picture>
+              <source
+                srcset="
+                  ../images/masters/master-2-m.webp    418w,
+                  ../images/masters/master-2-m@2x.webp 836w
+                "
+                type="image/webp"
+              />
+              <img
+                class="foto-master"
+                srcset="
+                  ../images/masters/master-2-m.jpg    418w,
+                  ../images/masters/master-2-m@2x.jpg 836w
+                "
+                src="../images/masters/master-2-m.webp"
+                alt="Michele Doe"
+                width="450"
+                sizes="(min-width: 1280px) 33vw, 100vw"
+              />
+            </picture>
+            <h3 class="name-master">Michele Doe</h3>
+            <p class="position-master">Extreme Barber</p>
+            <div class="social-master">
+              <a class="icon-social" href="" aria-label="Instagram">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Twitter">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Facebook">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Linkedin">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="item-master">
+            <picture>
+              <source
+                srcset="
+                  ../images/masters/master-3-m.webp    418w,
+                  ../images/masters/master-3-m@2x.webp 836w
+                "
+                type="image/webp"
+              />
+              <img
+                class="foto-master"
+                srcset="
+                  ../images/masters/master-3-m.jpg    418w,
+                  ../images/masters/master-3-m@2x.jpg 836w
+                "
+                src="../images/masters/master-3-m.webp"
+                alt="Alan Black"
+                width="450"
+                sizes="(min-width: 1280px) 33vw, 100vw"
+              />
+            </picture>
+            <h3 class="name-master">Alan Black</h3>
+            <p class="position-master">Extreme Barber</p>
+            <div class="social-master">
+              <a class="icon-social" href="" aria-label="Instagram">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Twitter">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Facebook">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="icon-social" href="" aria-label="Linkedin">
+                <svg width="44px" height="44px">
+                  <use href="./images/sprit.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <div class="container">
+      <p class="text-black mb-44">
+        На латинском языке “барба” означает “борода”
+      </p>
+      <ul class="list-workflow">
+        <li class="item-workflow">
+          <picture>
+            <source
+              srcset="
+                ./images/work/work-1.webp    418w,
+                ./images/work/work-1@2x.webp 836w
+              "
+              type="image/webp"
+            />
+            <img
+              srcset="
+                ./images/work/work-1.jpg    418w,
+                ./images/work/work-1@2x.jpg 836w
+              "
+              src="./images/work/work-1.jpg"
+              alt="Стрижка"
+              width="418"
+              sizes="(min-width: 1200px) 33vw, 100vw"
+            />
+          </picture>
+        </li>
+        <li class="item-workflow">
+          <picture>
+            <source
+              srcset="
+                ./images/work/work-2.webp    418w,
+                ./images/work/work-2@2x.webp 836w
+              "
+              type="image/webp"
+            />
+            <img
+              srcset="
+                ./images/work/work-2.jpg    418w,
+                ./images/work/work-2@2x.jpg 836w
+              "
+              src="./images/work/work-2.jpg"
+              alt="Стрижка бороды"
+              width="418"
+              sizes="(min-width: 1200px) 33vw, 100vw"
+            />
+          </picture>
+        </li>
+        <li class="item-workflow">
+          <picture>
+            <source
+              srcset="
+                ./images/work/work-3.webp    418w,
+                ./images/work/work-3@2x.webp 836w
+              "
+              type="image/webp"
+            />
+            <img
+              srcset="
+                ./images/work/work-3.jpg    418w,
+                ./images/work/work-3@2x.jpg 836w
+              "
+              src="./images/work/work-3.jpg"
+              alt="высушивания волос"
+              width="418"
+              sizes="(min-width: 1200px) 33vw, 100vw"
+            />
+          </picture>
+        </li>
+        <li class="item-workflow">
+          <picture>
+            <source
+              srcset="
+                ./images/work/work-4.webp    418w,
+                ./images/work/work-4@2x.webp 836w
+              "
+              type="image/webp"
+            />
+            <img
+              srcset="
+                ./images/work/work-4.jpg    418w,
+                ./images/work/work-4@2x.jpg 836w
+              "
+              src="./images/work/work-4.jpg"
+              alt="Окантовка"
+              width="418"
+              sizes="(min-width: 1200px) 33vw, 100vw"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <section class="first-footer">
+        <div class="container">
+          <h2 class="title white">Онлайн-запись</h2>
+          <form class="form">
+            <label class="text-form">
+              <input class="field" type="text" placeholder="ИМЯ*" />
+            </label>
+            <label class="text-form">
+              <input class="field" type="tel" placeholder="ТЕЛЕФОН*" />
+            </label>
+            <label class="text-form">
+              <textarea
+                class="field pb-60"
+                name="text"
+                placeholder="СООБЩЕНИЕ"
+              ></textarea>
+            </label>
+          </form>
+          <button class="button" type="submit">отправить</button>
+        </div>
+      </section>
+      <section class="second-footer">
+        <div class="container">
+          <h2 class="title white">Контакты</h2>
+          <address class="address-footer">
+            <a class="contacts" href="">
+              <svg class="icon-address" width="24px" height="24px">
+                <use href="./images/sprit.svg#icon-map-pin"></use>
+              </svg>
+              <span> ул. Васильковая, 7А, Киев, 08132 </span>
+            </a>
+            <a class="contacts" href="tel:+380441111111">
+              <svg class="icon-address" width="24px" height="24px">
+                <use href="./images/sprit.svg#icon-phone"></use>
+              </svg>
+              <span> +38 044 111 11 11 </span>
+            </a>
+            <a class="contacts" href="mailto:barbershop@email.com">
+              <svg class="icon-address" width="24px" height="24px">
+                <use href="./images/sprit.svg#icon-mail"></use>
+              </svg>
+              <span> barbershop@email.com </span>
+            </a>
+          </address>
+
+          <p class="text-footer">время работы</p>
+          <span class="time">Ежедневно с 9:00 до 22:00</span>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

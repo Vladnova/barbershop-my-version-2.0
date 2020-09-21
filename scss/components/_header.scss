@@ -1,0 +1,179 @@
+.hero {
+  position: relative;
+  max-width: 767px;
+  height: 580px;
+
+  background: url("../images/hero/bgi-m.jpg"),
+    linear-gradient($bg-shadows-pages);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-resolution: 2dppx) {
+    background: url("../images/hero/bgi-m@2x.jpg"),
+      linear-gradient($bg-shadows-pages);
+    background-size: cover;
+  }
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 183px;
+  }
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+// кнопка телефонного меню
+.btn-menu {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  background-color: transparent;
+  z-index: 2;
+
+  .icon-close {
+    display: none;
+  }
+
+  &.is-open {
+    .icon-close {
+      display: inline-block;
+    }
+  }
+
+  &.is-open {
+    .icon-menu {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+//телефонне меню
+.menu {
+  position: absolute;
+  width: 337px;
+  display: none;
+  top: 0;
+  right: 0;
+  padding: 118px 40px 227px;
+
+  background-color: $bg-pages-first;
+  z-index: 1;
+
+  &.is-open {
+    display: block;
+    box-shadow: -200px 1px 300px 2000px rgba(0, 0, 0, 0.3);
+  }
+
+  .list-menu {
+    @extend %list;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 70%;
+  }
+}
+
+.item-menu {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.link-menu {
+  @extend %link;
+  @extend %hover;
+
+  font-weight: 600;
+  font-size: 18px;
+
+  color: $title-black;
+  transition: $animation;
+}
+
+.contact-menu {
+  margin-bottom: 24px;
+
+  .phone-menu {
+    @extend %link;
+    @extend %hover;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+
+    color: $title-black;
+  }
+}
+
+.button {
+  @extend %button;
+}
+
+.big {
+  display: block;
+  padding: 12px 36px;
+  margin-bottom: 64px;
+}
+
+.link-social {
+  @extend %link;
+  @extend %hover;
+
+  display: block;
+  padding-left: 100px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+
+  color: $title-black;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+// стилі героя
+
+.hero-text {
+  max-width: 306px;
+  padding-top: 112px;
+}
+
+.text-gray {
+  @extend %mini-title;
+  @extend %before-gray;
+
+  color: $color-mini-title;
+}
+
+.title-hero {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: $bg-pages-first;
+}
+
+.subtitle-hero {
+  @extend %subtitle;
+
+  color: $gray-paragraph;
+}
